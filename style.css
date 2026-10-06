@@ -92,7 +92,7 @@ body {
 
 .input-group input {
     width: 100%;
-    padding: 14px 16px 14px 44px;
+    padding: 14px 44px;
     background-color: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 8px;
@@ -101,13 +101,18 @@ body {
     transition: all 0.3s ease;
 }
 
+.input-group {
+    position: relative;
+}
+
 .input-group input:focus {
     border-color: #6f42c1;
     outline: none;
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-.input-icon {
+.input-icon-email,
+.input-icon-password {
     position: absolute;
     left: 16px;
     top: 50%;
@@ -196,3 +201,57 @@ body {
     z-index: 2;
 }
 
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.btn-social {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 0;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-social:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.btn-social img {
+    width: 16px;
+    height: 16px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.card-footer a {
+     color: #a0a0b0;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.card-footer a:hover {
+    color: #ffffff;
+}
+
+.card-footer .bullet {
+     color: #444454;
+}
